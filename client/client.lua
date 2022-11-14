@@ -6,14 +6,14 @@
 --╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 
 
-ESX, QBCore = nil, nil
+QBCore = nil
 
 Citizen.CreateThread(function()
     if Config.Framework == 'esx' then
-        while ESX == nil do
-            TriggerEvent(Config.FrameworkTriggers.main, function(obj) ESX = obj end)
-            Wait(100)
-        end
+        -- while ESX == nil do
+        --     TriggerEvent(Config.FrameworkTriggers.main, function(obj) ESX = obj end)
+        --     Wait(100)
+        -- end
 
         RegisterNetEvent(Config.FrameworkTriggers.load)
         AddEventHandler(Config.FrameworkTriggers.load, function(xPlayer)

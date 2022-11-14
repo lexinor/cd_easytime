@@ -6,12 +6,11 @@
 --╚═╝     ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝     ╚═╝╚══════╝ ╚══╝╚══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 
 
-ESX = nil
 QBCore = nil
 vRP, vRPclient = nil, nil
 
 if Config.Framework == 'esx' then
-    TriggerEvent(Config.FrameworkTriggers.main, function(obj) ESX = obj end)
+    --TriggerEvent(Config.FrameworkTriggers.main, function(obj) ESX = obj end)
 
 elseif Config.Framework == 'qbcore' then
     TriggerEvent(Config.FrameworkTriggers.main, function(obj) QBCore = obj end)

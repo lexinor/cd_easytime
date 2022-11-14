@@ -5,6 +5,7 @@ description 'Codesign Weather & Time Managment'
 version '1.3.6'
 
 shared_scripts {
+    "@es_extended/imports.lua",
     'configs/locales.lua',
     'configs/config.lua'
 }
